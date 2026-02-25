@@ -11,7 +11,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 builder.Services.AddCors(options => options.AddPolicy(name: "FrontendPolicy",
-        policy => policy.WithOrigins("http://localhost:9090").AllowAnyHeader().AllowAnyMethod()));
+        policy => policy.WithOrigins("http://localhost:9090", "http://localhost:5050").AllowAnyHeader().AllowAnyMethod()));
 
 var app = builder.Build();
 

@@ -1,0 +1,16 @@
+services:
+  backend:
+    build:
+      context: ./Backend/WeatherForecast.Api
+      dockerfile: Dockerfile
+    container_name: aspnet-backend
+    ports:
+      - 5050:8080
+
+  frontend:
+    build:
+      context: ./Frontend
+      dockerfile: Dockerfile
+    container_name: react-frontnend
+    ports:
+      - 9090:8080

@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AspNetCoreWithReactSingleHost;
+
+using Microsoft.AspNetCore.Mvc;
 
 namespace AspNetCoreWithReact.Controllers;
 

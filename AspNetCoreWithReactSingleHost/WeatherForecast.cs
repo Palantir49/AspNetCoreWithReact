@@ -1,4 +1,4 @@
-namespace AspNetCoreWithReact;
+namespace AspNetCoreWithReactSingleHost;
 
 public class WeatherForecast
 {
